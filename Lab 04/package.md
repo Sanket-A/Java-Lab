@@ -8,81 +8,41 @@
 
 There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc.
 
- There are three ways to access the package from outside the package.
+CODE:
 
-  1. import package.*;
+package MyPackage;
+ 
+public class Compare {
+  int num1, num2;
+ 
+  Compare(int n, int m) {
+     num1 = n;
+     num2 = m;
+}
+public void getmax(){
+    if ( num1 > num2 ) {
+        System.out.println("Maximum value of two numbers is " + num1);
+  }
+    else {
+        System.out.println("Maximum value of two numbers is " + num2);
+    }
+}
+ 
+ 
+public static void main(String args[]) {
+        Compare current[] = new Compare[3];
+            
+        current[1] = new Compare(5, 10);
+        current[2] = new Compare(123, 120);
+          
+          for(int i=1; i < 3 ; i++)
+              {
+              current[i].getmax();
+              }
+       }
+}
 
+output
+Maximum value of two numbers is 10
+Maximum value of two numbers is 123
 
-  if we package name then all classes and interfaces of that class are accessible but not sub-packages.
-
-
-
-  
-package pack;  
-public class A{  
-  public void msg(){System.out.println("Hello");}  
-}  
-```
-```_save in b.java_
-package mypack;  
-import pack.*;  
-  
-class B{  
-  public static void main(String args[]){  
-   A obj = new A();  
-   obj.msg();  
-  }  
-}  
-```
-
-  2. import package.classname;
-
-_only class name is assible not others_
-
-**code**
-
-```
-package pack;  
-public class A{  
-  public void msg(){System.out.println("Hello");}  
-}  
-```
-```
-package mypack;  
-import pack.A;  
-  
-class B{  
-  public static void main(String args[]){  
-   A obj = new A();  
-   obj.msg();  
-  }  
-}  
-```
-
-
-
-  3. fully qualified name.
-
-  _If you use fully qualified name then only declared class of this package will be accessible. Now there is no need to import. But you need to use fully qualified name every time when you are accessing the class or interface._
-
-  ```
-  package pack;  
-public class A{  
-  public void msg(){System.out.println("Hello");}  
-  ```
- ```
- package mypack;  
-class B{  
-  public static void main(String args[]){  
-   pack.A obj = new pack.A();//using fully qualified name  
-   obj.msg();  
-  }  
-}  
- ```
-
-
-## to compile: javac -d directory javafilename
-## to run : java packageNAME.className
-
-# Conclusion 
- package are usge to provide access protection , remove name collision and many more.
