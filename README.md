@@ -18,7 +18,7 @@
 				<tr>
 			<td>2</td>
 			<td style="font-weight: 700;">JAVA CONSTRUCRTOR<sub></sub>
-			<td>sd</td>
+			<td>Lab 02</td>
 			</tr>
 					<tr>
 			<td>3</td>
