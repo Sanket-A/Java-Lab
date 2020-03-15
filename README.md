@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Table</title>
 </head>
 <body>
 	<table border="1">
@@ -13,12 +12,12 @@
 		<tr>
 			<td>1</td>
 			<td style="font-weight: 700;">DATA TYPE AND ARRAY IN JAVA<sub></sub></td>	
-			<td></td>
+			<td>https://github.com/Sanket-A/Java-Lab/tree/master/Lab%2001</td>
 				</tr>
 				<tr>
 			<td>2</td>
 			<td style="font-weight: 700;">JAVA CONSTRUCRTOR<sub></sub>
-			<td>Lab 02</td>
+			<td></td>
 			</tr>
 					<tr>
 			<td>3</td>
